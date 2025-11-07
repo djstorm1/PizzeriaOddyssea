@@ -1,0 +1,180 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #009246, #fff, #ce2b37);
+    padding: 15px 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border-bottom: 2px solid #ce2b37;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.6em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #009246;
+    background-color: rgba(0,146,70,0.1);
+}
+
+.order-btn {
+    background-color: #ce2b37;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.order-btn:hover {
+    background-color: #009246;
+    transform: scale(1.05);
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1601924638867-3ec3b7e82c1e') center/cover;
+    background-size: cover;
+    color: #000;
+    padding: 120px 20px;
+    border-radius: 10px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f3f3;
+    border-top: 2px solid #ce2b37;
+    font-size: 0.9em;
+}
+
+p {
+    color: #000;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; 
+}
+
+
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 18px;
+        margin-top: 12px;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px 16px;
+        font-size: 1.1em;
+    }
+
+    .order-btn {
+        padding: 14px 24px;
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .hero {
+        padding: 100px 20px;
+    }
+}
+
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 14px;
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 10px 14px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .order-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .hero {
+        padding: 70px 10px;
+        font-size: 0.95em;
+    }
+}

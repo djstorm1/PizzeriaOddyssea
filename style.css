@@ -65,13 +65,12 @@ main {
     text-align: center;
 }
 
-.hero {
-    background: url('https://images.unsplash.com/photo-1601924638867-3ec3b7e82c1e') center/cover;
-    background-size: cover;
-    color: #000;
-    padding: 120px 20px;
-    border-radius: 10px;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+
+
+.hero img{
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -176,5 +175,180 @@ main {
     .hero {
         padding: 70px 10px;
         font-size: 0.95em;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff8f0;
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px 0;
+}
+
+p {
+    margin: 0 0 15px 0;
+}
+
+
+.hero2{
+    background: url('images/Pizza\ Background\ Food\ -\ Free\ photo\ on\ Pixabay.jpeg') center/cover no-repeat;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero2::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.hero2-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.hero2 h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.hero2 p.sub {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e04343;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+.btn-outline:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff0e0;
+}
+
+.intro h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+
+.pizzas-preview {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.pizzas-preview h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.pizzas-preview .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #fff8f0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.card h3 {
+    padding: 15px 20px 0 20px;
+}
+
+.card p {
+    padding: 0 20px 20px 20px;
+    font-size: 0.95em;
+}
+
+
+.about-us {
+    background-color: #ffe6d6;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.call-to-action {
+    background-color: #ff4d4d;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.call-to-action h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.call-to-action p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* --- Responsivita --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero p.sub {
+        font-size: 1em;
     }
 }

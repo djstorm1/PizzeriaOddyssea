@@ -12,8 +12,6 @@ $sub_slogan = "NEDĚLÁME JEN PIZZU — DĚLÁME TI LEPŠÍ DEN";
 <section class="hero2">
   <div class="hero-inner">
     <h1><?php echo htmlspecialchars($slogan); ?></h1>
-    <p class="sub"><?php echo htmlspecialchars($sub_slogan); ?></p>
-    <a href="objednat.php" class="btn btn-primary">Objednat online</a>
   </div>
 </section>
 
@@ -61,3 +59,5 @@ $sub_slogan = "NEDĚLÁME JEN PIZZU — DĚLÁME TI LEPŠÍ DEN";
 </section>
 
 <?php include 'includes/footer.php'; ?>
+
+

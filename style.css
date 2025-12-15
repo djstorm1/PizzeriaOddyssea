@@ -183,7 +183,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-color: #ffbc6e;
+    background-color: #fff5e9;
 }
 
 h1, h2, h3 {
@@ -196,7 +196,8 @@ p {
 
 
 .hero2{
-    background: url('images/Pizza\ Background\ Food\ -\ Free\ photo\ on\ Pixabay.jpeg') center/cover no-repeat;
+    background: url('images/bcgrnd.jpg') center/cover no-repeat;
+    object-fit: cover;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 120px 20px;
@@ -315,11 +316,6 @@ p {
 }
 
 
-.about-us {
-    background-color: #ffe6d6;
-    padding: 60px 20px;
-    text-align: center;
-}
 
 .about-us h2 {
     font-size: 2em;
@@ -328,7 +324,7 @@ p {
 
 
 .call-to-action {
-    background-color: #ffe9dc;
+    background-color: #fff0e0;
     color: white;
     text-align: center;
     padding: 80px 20px;
@@ -354,6 +350,10 @@ p {
     }
 }
 
+h4{
+    color: black;
+    font-size: 50px;
+}
 
 .menu-container {
 max-width: 1200px;
@@ -432,15 +432,15 @@ transform: scale(1.05);
 }
 
 .about-us {
-    background-color: #ffbc6e; /* jemný teplý podklad */
     padding: 80px 20px;
     text-align: center;
+    background-color: #fff0e0;
 }
 
 .about-inner {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff8f0; /* kontrastní box pro text */
+    background-color: #fff8f0; 
     padding: 40px 30px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -448,7 +448,7 @@ transform: scale(1.05);
 
 .about-us h2 {
     font-size: 2.5em;
-    color: #ce2b37; /* červený akcent */
+    color: #ce2b37; 
     margin-bottom: 25px;
 }
 
@@ -458,7 +458,6 @@ transform: scale(1.05);
     color: #333;
 }
 
-/* responsivní úprava */
 @media (max-width: 768px) {
     .about-inner {
         padding: 30px 20px;
@@ -513,4 +512,148 @@ transform: scale(1.05);
   margin-bottom: 6px;
   font-size: 15px;
   line-height: 1.4;
+}
+
+
+
+:root {
+    --italy-red: #c8403b;
+    --italy-green: #2f7d4a;
+    --italy-cream: #f7f4e9;
+    --text-dark: #333;
+    --border-soft: #e0ddcf;
+    --radius: 10px;
+}
+
+
+.order-contact-box {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--italy-cream);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+}
+
+.order-choice {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.choice-btn {
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-soft);
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.25s;
+    color: var(--text-dark);
+}
+
+.choice-btn.active {
+    background: var(--italy-green);
+    color: white;
+    border-color: var(--italy-green);
+}
+
+.choice-btn:hover:not(.active) {
+    background: #f0efe7;
+}
+
+.order-tab {
+    display: none;
+}
+
+.order-tab.visible {
+    display: block;
+}
+
+.order-tab h2 {
+    color: var(--italy-red);
+    margin-bottom: 10px;
+}
+
+.phone-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--italy-green);
+    margin: 15px 0;
+}
+.pizza-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pizza-form label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.pizza-form input,
+.pizza-form textarea,
+.pizza-form select {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-soft);
+    background: white;
+    font-size: 1rem;
+    transition: border 0.25s;
+}
+
+.pizza-form input:focus,
+.pizza-form textarea:focus,
+.pizza-form select:focus {
+    border-color: var(--italy-green);
+    outline: none;
+}
+
+.submit-order {
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--italy-red);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.25s;
+    font-weight: bold;
+}
+
+.submit-order:hover {
+    background: #b7322f;
+}
+
+.pizza-menu {
+    margin: 30px 0 20px;
+    padding: 15px;
+    background: white;
+    border: 1px solid var(--border-soft);
+    border-radius: var(--radius);
+}
+
+.pizza-menu h3 {
+    margin-bottom: 10px;
+    color: var(--italy-green);
+}
+
+.pizza-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pizza-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-soft);
+    color: var(--text-dark);
+    font-size: 1.05rem;
+}
+
+.pizza-list li:last-child {
+    border-bottom: none;
 }

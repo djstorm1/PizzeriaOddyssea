@@ -53,9 +53,9 @@ $sub_slogan = "NEDĚLÁME JEN PIZZU — DĚLÁME TI LEPŠÍ DEN";
 </section>
 
 <section class="call-to-action">
-  <h2>Stavíš se u nás nebo ti pizzu dovezeme?</h2>
+  <h4>Stavíš se u nás nebo ti pizzu dovezeme?</h4>
   <p>Rozvoz zajištěn po celém městě. Sleduj aktuální nabídky a akce.</p>
-  <a href="contact.php" class="btn btn-primary">Kontakt / Rozvoz</a>
+  <a href="objednat.php" class="btn btn-primary"> Rozvoz</a>
 </section>
 
 <?php include 'includes/footer.php'; ?>

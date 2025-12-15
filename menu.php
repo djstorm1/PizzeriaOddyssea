@@ -88,7 +88,7 @@ $pizzas = [
     [
         'name' => 'King’s',
         'desc' => 'Bílý základ, mozzarella, salám, chorizo, cibule, mix sýrů (eidam, cheddar), balkánský sýr, King’s dip.',
-        'price' => 'from 309 Kč',
+        'price' => '309 Kč',
         'img' => 'images/spenatova.png'
     ],
     [
